@@ -7,7 +7,31 @@ int main()
 {
  setlocale(LC_ALL, "portuguese"); 
 
-
+  int opcao, n1, n2;
+ 
+  while ((opcao==1) || (opcao==2));
+  {
+  cout << ("Digite o primeiro número: ") << endl;
+  cin >> n1; 
+  cout << ("Digite o segundo número: ") << endl;
+  cin >> n2;
+  cout << ("Escolha uma das seguintes opçãoes:") << endl;
+  cout << ("1.Média entre os números digitados.") << endl;
+  cout << ("2.Diferença do maior pelo menor.") << endl;
+  cin >> opcao;
+  
+   if (opcao==1)
+   {
+   	cout <<("Média = ") << ((n1+n2)/2);
+   }
+   if (opcao==2)
+   {
+   	if (n1>n2)
+   		cout << ("Diferença = ") << (n1-n2);
+   	else
+	   	cout << ("Diferença = ") << (n2-n1);
+   } 
+  }
    
  return 0;
 }
